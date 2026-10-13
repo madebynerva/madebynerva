@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice - Get your Spices right.</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="screen-container">
+    <div id="app-container">
+        <h1>
+          Spices
+        </h1>
+      <ul id="spice-list">
+        <li class="spice-list-item">
+        <div class="spice-item">
+          <div class="spice-thumbnail-container">
+            <img class="thumbnail" href="#" alt="">
+          </div>
+          <h2 class="spice-headline">
+            Cumin
+          </h2>
+          <div class="spice-weight-container">
+            <label for="cumin-weight" class="aria-hidden">Weight</label>
+            <input id="cumin-weight" class="spice-weight" type="number" value="1" step="1">
+            <label for="cumin-weight-unit" class="aria-hidden">Unit</label>
+            <select id="cumin-weight-unit" class="spice-weight">
+              <option value="mg">mg</option>
+              <option value="g" selected>g</option>
+              <option value="deg">deg</option>
+              <option value="kg">kg</option>
+            </select>
+          </div>
+          <div class="spice-checker-check"></div>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
