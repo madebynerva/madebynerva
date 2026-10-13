@@ -1,0 +1,141 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quicksand&display=swap');
+
+:root {
+  --fc-dark: #1a1a1a;
+  --fc-darkgrey: #555555;
+  --fc-lightgrey: #a5a5a5;
+  --fc-light: #fffff5;
+
+  --nav-height: 5rem;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: var(--fc-dark);
+}
+main {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--fc-dark);
+}
+ul{
+  list-style: none;
+}
+#logo {
+  display: inline-block;
+  width: auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  color: var(--fc-light);
+}
+.inline-logo {
+  font-family: 'EB Garamond', serif;
+  font-size: inherit;
+}
+.prefix-inline-logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.5em;
+  letter-spacing: -0.025em;
+}
+.nerva-logo {
+  font-family: 'EB Garamond', serif;
+  padding-left: 0.13em;
+}
+
+#top-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  padding: 0 5%;
+  color: var(--fc-light);
+  background-color: var(--fc-dark);
+  z-index: 1;
+}
+#top-nav #logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3rem;
+}
+#top-nav ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: calc(3rem + 15px);
+  align-items: center;
+  color: var(--fc-light);
+}
+#top-nav ul li a {
+  color: var(--fc-light);
+}
+#top-nav ul li a:hover {
+  color: var(--fc-lightgrey);
+}
+
+.hero-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: inherit;
+}
+#hero-headline {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#hero-band {
+  background-color: var(--fc-darkgrey);
+}
+#hero-band #logo {
+  color: var(--fc-lightgrey);
+}
+#hero-dev {
+  background-color: var(--fc-lightgrey);
+}
+.hero-item {
+  display: flex;
+  flex-direction: column;
+  gap: 50%;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding: 200px 5vw 3vh;
+}
+.hero-item h2 .nerva-logo {
+  font-size: 10rem;
+}
+.hero-item h2 {
+  font-size: 4rem;
+}
+.hero-item p {
+  text-indent: 2ch;
+  font-size: 1.5rem;
+}
+.hero-item #logo {
+  align-self: flex-end;
+  color: var(--fc-darkgrey);
+}
