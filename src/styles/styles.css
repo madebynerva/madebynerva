@@ -1,0 +1,88 @@
+body {
+  padding-top: 5vh;
+  font-family: "DM Serif Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-dark);
+  background-color: var(--color-dark);
+}
+
+/* components */
+.logo {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 5rem;
+}
+.logo-madeby {
+  font-size: 0.5em;
+  letter-spacing: -0.07rem;
+  margin-right: 0.09em;
+  margin-left: -0.07em;
+}
+.logo-nerva {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* layout */
+main {
+  width: calc(100% - 10vh);
+  height: 70vh;
+  margin: 0 auto;
+  background: linear-gradient(90deg, var(--color-light), #fff4e8);
+  border-radius: 15px;
+}
+#hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  overflow-wrap: anywhere;
+  border-radius: inherit;
+  padding: 0 20px;
+  overflow: hidden;
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 20vw;
+  font-kerning: normal;
+  line-height: 15vw;
+  margin: 0;
+  margin-top: 30px;
+}
+h1 + p {
+  font-size: 2rem;
+  text-align: right;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 calc(5vh + 20px);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.3rem;
+  color: var(--color-light);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 0.1rem;
+}
+footer p {
+  font-size: min(3vw, 2rem);
+}
+footer p .logo {
+  font-size: min(8vw, 5rem);
+}
