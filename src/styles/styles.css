@@ -30,7 +30,7 @@ main {
   width: calc(100% - 10vh);
   height: 70vh;
   margin: 0 auto;
-  background: linear-gradient(90deg, var(--color-light), #fff4e8);
+  background: linear-gradient(var(--color-creme), var(--color-light));
   border-radius: 15px;
 }
 #hero {
